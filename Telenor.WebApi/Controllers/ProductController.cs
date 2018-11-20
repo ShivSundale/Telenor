@@ -23,18 +23,15 @@ namespace Telenor.WebApi.Controllers
             _productBl = productBl;
             _hostingEnv = hostingEnv;
         }
-        // GET api/v1/[controller]/products
+        
         [HttpGet]
-        //[Route("products")]
         [ProducesResponseType(typeof(IEnumerable<ProductViewModel>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> Products()
         {
             var products = await _productBl.GetAllProducts();
             return Ok(products);
         }
-
-        //[HttpGet]
-        //[Route("products/{id:int}")]
+        
         [HttpGet("{id}")]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType(typeof(ProductViewModel), (int)HttpStatusCode.OK)]

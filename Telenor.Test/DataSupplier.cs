@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Telenor.DbEntities;
 
 namespace Telenor.Test
@@ -93,11 +91,17 @@ namespace Telenor.Test
             {
                 new ViewModel.ProductViewModel
                 {
-                    
+                    Description = UT_Default_Product_1_Description,
+                    Name = UT_Default_Product_1_Name,
+                    Price = UT_Default_Product_1_Price,
+                    PictureFileName = UT_Default_Product_1_PictureFileName,
                 },
                 new ViewModel.ProductViewModel
                 {
-                    
+                    Description = UT_Default_Product_2_Description,
+                    Name = UT_Default_Product_2_Name,
+                    Price = UT_Default_Product_2_Price,
+                    PictureFileName = UT_Default_Product_2_PictureFileName
                 }
             };
             return productViewModels;
@@ -107,7 +111,10 @@ namespace Telenor.Test
         {
             return new ViewModel.ProductViewModel
             {
-                
+                Description = UT_Default_Product_1_Description,
+                Name = UT_Default_Product_1_Name,
+                Price = UT_Default_Product_1_Price,
+                PictureFileName = UT_Default_Product_1_PictureFileName,
             };
         }
     }

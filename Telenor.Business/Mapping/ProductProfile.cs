@@ -25,8 +25,7 @@ namespace Telenor.Business.Mapping
             CreateMap<ViewModel.ProductViewModel, DbEntities.Product>()
             .ForMember(dest => dest.ProductCategory, source => source.MapFrom(src => src.ProductCategory))
             .ForMember(dest => dest.ProductBrand, source => source.MapFrom(src => src.ProductBrand))
-            .ForMember(dest => dest.ProductFeatures, source => source.MapFrom(src => src.ProductFeatures))
-            ;
+            .ForMember(dest => dest.ProductFeatures, source => source.MapFrom(src => src.ProductFeatures));
         }
     }
 }
