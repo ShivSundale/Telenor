@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="Moq" Version="4.10.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Telenor.Business\Telenor.Business.csproj" />
+    <ProjectReference Include="..\Telenor.Dal\Telenor.Dal.csproj" />
+    <ProjectReference Include="..\Telenor.DbEntities\Telenor.DbEntities.csproj" />
+    <ProjectReference Include="..\Telenor.Infrastructure\Telenor.Infrastructure.csproj" />
+    <ProjectReference Include="..\Telenor.ViewModel\Telenor.ViewModel.csproj" />
+    <ProjectReference Include="..\Telenor.WebApi\Telenor.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,37 @@
+<section class="htc__product__details bg__white ptb--50">
+    <div class="htc__product__details__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-10 col-xs-10">
+                    <img *ngIf="productService.Product" [src]="productService.ProductPicBasePath+productService.Product?.PictureFileName" alt="product images">
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
+                    <div class="ht__product__dtl">
+                        <h2>{{productService.Product?.Name}}
+                        </h2>
+                        <ul class="pro__prize">
+                            <li class="old__prize">SEK</li>
+                            <li>{{productService.Product?.Price}}</li>
+                        </ul>
+
+                        <p class="pro__info">{{productService.Product?.Description}}</p>
+                        <div class="ht__pro__desc">
+                            <h6>Product Features
+                            </h6>
+
+                            <div *ngFor="let productFeature of productService.Product?.ProductFeatures" class="sin__desc align--left">
+                                <p>
+                                    <b>
+                                        <span>{{productFeature.ProductFeatureType.FeatureName}}: </span>
+                                    </b>
+                                    <span>{{productFeature.FeatureValue}}</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

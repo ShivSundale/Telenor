@@ -1,0 +1,12 @@
+Test Assignment:
+- Make a single page web application displaying a responsive web interface with a header and a footer and content of a product marketing landing page displaying products w/ brief product info from a product catalog. E.g. 4 different phones, with different set of prices and list of features ordered in a per product product info page that will be shown onclick/onpress. 
+
+Info and requirements:
+-Use any technology of your liking, but preferably .net and vue.js
+-Simulate that the products are loaded from an external backend, (REST-API w/ mocked xml/json data) separated from the web application. 
+-The code should be available in a public github repo with a readme-file on how to run it. 
+-The code should have at least one unit test
+-The code should have at least one integration test. 
+
+Evaluation
+- Visual finish is important but the code structure and quality will be the things we focus on in the preceding discussion with you. 
